@@ -1,3 +1,13 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 .brand-logo {
 	margin-left: 20px;
 	margin-top: 7px;
@@ -61,4 +71,50 @@
 .jaaga-log img {
 	background: #ffffff;
 	border-radius: 10px;
+}
+
+nav ul a {
+	padding: 0 50px;
+}
+ 
+/*css for web development page*/
+.web-image {
+	text-align: center;
+}
+.web-image img {
+	width: 200px;
+	height: 200px;
+}
+.red-web {
+	text-align: center;
+}
+.red-web p {
+	color: #ee6e73;
+    font-size: 27px;
+    margin: 0;
+    font-family: 'Sansita', sans-serif;
+}
+.web-heading {
+	margin: 0;
+}
+.red_top p {
+	font-family: 'Sansita', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0;
+}
+.index-list {
+	border: 1px solid #ee6e73;
+}
+.index-list li {
+	color: #ee6e73;
+	font-family: 'Sansita', sans-serif;
+	font-size: 18px;
+}
+#data {
+	color: #ee6e73;
+	font-family: 'Sansita', sans-serif;
+	font-size: 20px;
+	letter-spacing: 0.008em;
 }
