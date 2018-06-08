@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100%;
+        }
+        div {
+            height: 100vh;
+            background-image: url(kashi.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            transform: rotate(-10deg);
+            transition: 1000ms ease-out;
+            display: flex;
+            width: 50%;
+            border: 0px solid silver;
+            background-color: rgba(0, 0, 0, 0.5);
+            flex-direction: column;
+            align-items: center;
+        }
+        section:hover {
+            transform: rotate(0deg);
+            transform: scale(1.4);
+            transition-duration: 1000ms;
+            border: 0px solid silver;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        h1 {
+            font-size: 4rem;
+            color: #ffffff;
+            font-family: 'Playball', cursive;
+        }
+        form {
+            padding: 8%;
+        }
+        #mail {
+            width: 50%;
+            padding: 3%;
+            border: 2px solid silver;            
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.7)
+        }
+        input[type="email"] {
+            color: white;
+        }
+        button {
+            margin-left: 3%;
+            border: 2px solid skyblue;
+            border-radius: 8%;
+            width: 20%;
+            padding: 3%;
+            background-color: skyblue;
+            color: #000000;
+        }
+        button:hover{
+            background-color: #41B3F2;
+        }
+        p {
+            margin-top: 1%; 
+            padding: 1%;
+            color: #ffffff;
+            font-weight: bolder;
+        }
+        .is-center {
+            text-align: center;
+        }
+
+        .blinking {
+            animation: blinkingText 0.2s infinite;
+        }
+
+        @keyframes blinkingText {
+            0% { color: #ffffff; }
+            49% { color: silver; }
+            50% { color: black; }
+            99% { color: silver; }
+            100% { color: #ffffff; }
+        }
+
+        @media screen and (max-width: 600px) {
+            section {
+                display: flex;
+            }
+            form {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <form class="is-center">
+                <h1 class="blinking">Code in Kashi</h1>
+                <input id="mail" type="email" placeholder="type your email here..">
+                <button>&hearts; JOIN</button>
+                <p class="is-center">Coming soon. Subscribe for updates.</p>
+            </form>
+            
+        </section>
+    </div>
+</body>
+</html>
